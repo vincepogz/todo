@@ -33,6 +33,6 @@ jobs:
     - name: Push to docker Hub     
       uses: docker/build-push-action@v1     
       with:        
-        username: ${{ DOCKER_USERNAME }}        
-        password: ${{ DOCKER_PASSWORD }}        
-        repository: mc5rgspider/to_do_app
+        username: ${{ secrets.DOCKER_USERNAME }}        
+        password: ${{ secrets.DOCKER_PASSWORD }}        
+        repository: vincepogz/todo
